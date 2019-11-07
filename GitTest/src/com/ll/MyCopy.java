@@ -12,8 +12,29 @@ public class MyCopy {
 	 BufferedOutputStream bos=null;
 	 
 	 try {
+		  
+		 String fileName="c:\\1.txt";
+				 
 		 
-		 bis=new BufferedInputStream(new FileInputStream("c:\\1.txt"));
+		 File f=new File(fileName);
+		 
+		 if(f.exists()==false) {
+			 
+			 System.out.println(fileName+" 不存在");
+			 
+			 return;
+		 }
+		 
+		 if(f.canRead()==false) {
+			 
+			 	System.out.println(fileName+" 不可读");
+			 
+			 return;
+			 
+		 }
+		 
+		 
+		 bis=new BufferedInputStream(new FileInputStream(f));
 		 
 		 bos=new BufferedOutputStream(new FileOutputStream("d:\\copyed.txt"));
 		 
