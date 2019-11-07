@@ -4,7 +4,7 @@ import java.io.*;
 
 public class MyCopy {
 
-	@SuppressWarnings("resource")
+	
 	public static void main(String[] args)throws IOException {
 
 	 BufferedInputStream bis=null;
