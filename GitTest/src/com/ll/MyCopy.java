@@ -13,7 +13,7 @@ public class MyCopy {
 	 
 	 try {
 		  
-		 String fileName="c:\\1.txt";
+		 String fileName="c:"+File.separator+"1.txt";
 				 
 		 
 		 File f=new File(fileName);
