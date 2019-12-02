@@ -48,6 +48,9 @@ public class LearnningNIO {
 			
 			System.out.println(x+"、");
 			
+			
+			
+			
 		}
 		
 	}
